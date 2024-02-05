@@ -2,18 +2,24 @@
   "name": "dnk-math",
   "version": "1.0.0",
   "description": "Convenience and utility math functions for TS",
-  "main": "src/index.ts",
+  "main": "dnk-math",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "dnk-math"
+    "url": "https://github.com/JPM72/dnk-math.git"
   },
   "author": "dnk",
   "license": "ISC",
   "dependencies": {
     "decimal.js": "^10.4.3",
     "lodash": "^4.17.21"
+  },
+  "exports": {
+	".": {
+		"types": "./dist/index.d.ts",
+		"import": "./dist/index.js"
+	}
   }
 }

@@ -1,0 +1,11 @@
+import { Decimal } from 'decimal.js';
+export declare function round(value: any, scale?: number): number;
+export declare function round(value: any, scale?: number, asObject?: boolean): Decimal;
+export declare function r2(value: any): number;
+export declare function r2(value: any, asObject?: boolean): Decimal;
+export declare function r2sum(array: any[]): number;
+export declare function r2sum(array: any[], asObject?: boolean): Decimal;
+export declare function r2product(array: any[]): number;
+export declare function r2product(array: any[], asObject?: boolean): Decimal;
+export declare function r2mean(array: any[]): number;
+export declare function r2mean(array: any[], asObject?: boolean): Decimal;
