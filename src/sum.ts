@@ -3,7 +3,8 @@ import { guard } from './guard'
 
 function baseSum(array: any[], asObject: boolean = false)
 {
-	const n = Decimal.sum(...guard(array))
+	const a = guard(array)
+	const n = a.length ? Decimal.sum(...a) : new Decimal(0)
 	return asObject ? n : n.toNumber()
 }
 
