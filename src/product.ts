@@ -5,9 +5,7 @@ import { guard } from './guard'
 function baseProduct(array: any[], asObject: boolean = false)
 {
 	const a = guard(array)
-	const n = a.length
-		? a.reduce((a, v) => Decimal.mul(a, v), new Decimal(1))
-		: new Decimal(0)
+	const n = a.reduce((a, v) => Decimal.mul(a, v), new Decimal(+!!a.length))
 	return asObject ? n : n.toNumber()
 }
 
