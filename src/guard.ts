@@ -1,4 +1,4 @@
 export function guard(...args: any[]): number[]
 {
-	return args.flat(Infinity).filter(e => e && typeof e === 'number')
+	return args.flat(Infinity).filter(e => typeof e === 'number')
 }
