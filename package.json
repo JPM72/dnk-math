@@ -4,7 +4,8 @@
   "description": "Convenience and utility math functions for TS",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     }
+  },
+  "devDependencies": {
+    "@tsconfig/node21": "^21.0.3"
   }
 }

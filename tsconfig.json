@@ -1,10 +1,10 @@
 {
+	"extends": "@tsconfig/node21/tsconfig.json",
 	"compilerOptions": {
-		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "node",
 		"outDir": "dist",
-		"declaration": true
+		"declaration": true,
+		"noImplicitAny": false,
+		"strictBindCallApply": false
 	},
 	"include": ["./src/**/*"],
 	"exclude": ["node_modules"]
