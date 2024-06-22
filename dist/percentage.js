@@ -7,6 +7,6 @@ function percentage(x, y, asFraction = false) {
     const g = (0, guard_1.guard)([x, y]);
     if (g.length < 2)
         return 0;
-    return decimal_js_1.Decimal.div.apply(null, g).times(asFraction ? 1 : 100).toNumber();
+    return decimal_js_1.Decimal.div(...g).times(asFraction ? 1 : 100).toNumber();
 }
 exports.percentage = percentage;
